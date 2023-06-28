@@ -1,0 +1,55 @@
+@use "src/index";
+
+.App {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	gap: 2rem;
+	text-align: center;
+	align-items: center;
+
+	.board {
+		display: grid;
+		grid-template-columns: repeat(3, 10rem);
+		grid-template-rows: repeat(3, 10rem);
+		gap: 0.5rem;
+		list-style: none;
+		margin: 0 auto;
+		padding: 0;
+		width: fit-content;
+
+		.cell {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 10rem;
+			border: 0.5rem solid index.$base-color;
+			cursor: pointer;
+			width: 100%;
+			height: 100%;
+
+			&.empty:hover {
+				background: hsla(0, 100%, 0%, 0.015);
+				border-color: index.$secondary-color;
+			}
+		}
+	}
+
+	.button {
+		width: fit-content;
+		border: 0.5rem solid index.$base-color;
+		padding: 0.5rem 1rem;
+		background: none;
+		font-size: 2rem;
+		font-weight: 800;
+		color: index.$base-color;
+		cursor: pointer;
+
+		&:hover {
+			background: hsla(0, 100%, 0%, 0.015);
+			border-color: index.$secondary-color;
+			color: index.$secondary-color;
+		}
+	}
+
+}

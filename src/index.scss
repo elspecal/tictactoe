@@ -1,0 +1,28 @@
+$base-color: hsl(253, 31%, 28%);
+$secondary-color: hsl(97, 31%, 28%);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: linear-gradient(hsl(24, 100%, 97%), hsl(260, 100%, 96%));
+	color: $base-color;
+	min-height: 100vh;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+h1 {
+	font-size: 3rem;
+}
